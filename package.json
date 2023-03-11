@@ -2,10 +2,10 @@
     "name": "eslint-tutorial",
     "version": "1.0.0",
     "description": "",
-    "main": "./src/app.js",
+    "main": "./src/server.js",
     "scripts": {
-        "start": "node ./src/app.js",
-        "dev": "nodemon -r dotenv/config ./src/app.js",
+        "start": "node ./src/server.js",
+        "dev": "nodemon -r dotenv/config ./src/server-dev.js",
         "prepare": "husky install",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -21,8 +21,15 @@
     },
     "homepage": "https://github.com/Jenny-thoughti/eslint-tutorial#readme",
     "dependencies": {
+        "cors": "^2.8.5",
         "dotenv": "^16.0.3",
-        "express": "^4.18.2"
+        "express": "^4.18.2",
+        "express-session": "^1.17.3",
+        "helmet": "^6.0.1",
+        "memorystore": "^1.6.7",
+        "morgan": "^1.10.0",
+        "rotating-file-stream": "^3.1.0",
+        "uuid": "^9.0.0"
     },
     "devDependencies": {
         "eslint": "^8.36.0",
