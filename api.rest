@@ -1,0 +1,11 @@
+### Variables
+@APP_URL = http://localhost:5000
+
+### /
+GET {{APP_URL}} HTTP/1.1
+
+### /status
+GET {{APP_URL}}/status HTTP/1.1
+
+### /test
+GET {{APP_URL}}/test HTTP/1.1
